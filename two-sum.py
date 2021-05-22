@@ -7,6 +7,6 @@ class Solution:
                     return [i, j]
         #slightly more efficient
         for i in range(len(nums)): #loop through all elements in list
-            if (target - nums[i]) in nums:
+            if (target - nums[i]) in nums: #checks if second number in list
                 j = nums.index(target - nums[i])
                 return [i, j]
